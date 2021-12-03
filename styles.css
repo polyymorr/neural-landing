@@ -28,20 +28,13 @@ body {
     align-items: stretch;
     position: relative;
     display: grid;
-    gap: 5px;
+    gap: 1px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
 .first-block div img {
     display: block;
     flex-basis: 30%;
-}
-
-.first-block div img:last-child {
-    position: absolute;
-    top: 53%;
-    left: 64%;
-    width: 10%;
 }
 
 .first-block div pre {
