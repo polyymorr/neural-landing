@@ -18,6 +18,7 @@ body {
     height: 100vh;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .first-block {
@@ -28,7 +29,7 @@ body {
     align-items: stretch;
     position: relative;
     display: grid;
-    gap: 1px;
+    gap: 25px 0;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
@@ -75,4 +76,48 @@ body {
     left: 0;
     bottom: 10%;
     z-index: 1;
+}
+
+.third-block div img:first-child {
+    opacity: 0;
+}
+
+.third-block div img:nth-child(7n) {
+    opacity: 0;
+}
+
+.forth-block div img:nth-child(n + 2) {
+    opacity: 0;
+}
+
+.forth-block div img:nth-child(n + 5) {
+    opacity: 0;
+}
+
+.forth-block div img:nth-child(5n) {
+    opacity: 1;
+}
+
+.sixth-block div img:first-child,
+.sixth-block div img:last-child,
+.sixth-block div img:nth-child(4n),
+.sixth-block div img:nth-child(5n){
+    opacity: 0;
+}
+
+.eighth-block div img:nth-child(-n + 2) {
+    opacity: 0;
+}
+
+.eighth-block div img:nth-child(n + 7) {
+    opacity: 0;
+}
+
+.nineth-block div img {
+    align-self: center;
+    width: 500%;
+}
+
+.first {
+    align-self: stretch;
 }
